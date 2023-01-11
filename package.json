@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/MahendraBishnoi29/MERN-movie-review-app/issues"
   },
-  "homepage": "https://github.com/MahendraBishnoi29/MERN-movie-review-app#readme"
+  "homepage": "https://github.com/MahendraBishnoi29/MERN-movie-review-app#readme",
+  "dependencies": {
+    "dotenv-flow": "^3.2.0"
+  }
 }

@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
-
+require("dotenv-flow").config();
+console.log(process.env.MONGO_URI);
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect("mongodb://localhost:27017/Movie")
   .then(() => {
     console.log("DB Connected 🚀");
   })
