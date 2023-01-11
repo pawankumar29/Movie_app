@@ -6,5 +6,6 @@ mongoose
     console.log("DB Connected 🚀");
   })
   .catch((err) => {
+    console.log(process.env.MONGO_URI);
     console.log(`db not Connected : ${err.message}`);
   });

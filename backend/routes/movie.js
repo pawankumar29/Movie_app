@@ -17,6 +17,8 @@ const router = express.Router();
 const { IsAuth, isAdmin } = require("../middlewares/authMiddlware");
 const { parseData } = require("../middlewares/helper");
 const { uploadVideo, uploadImage } = require("../middlewares/multer");
+
+
 const {
   validateMovie,
   validate,
@@ -70,6 +72,7 @@ router.get("/update/:movieId", IsAuth, isAdmin, getMovieForUpdate);
 router.get("/search", IsAuth, isAdmin, searchMovie);
 
 // For Normal Users
+
 router.get("/latest-uploads", getLatestUploads);
 router.get("/single/:movieId", getSingleMovie);
 router.get("/related/:movieId", getRelatedMovies);
